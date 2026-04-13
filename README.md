@@ -18,13 +18,8 @@
 
 ## 📸 Screenshots
 
-### Interactive Dashboard — KPI Cards, Charts & Slicers
-![Interactive Dashboard](screenshots/Screenshot%202026-04-13%20180954.png)
-
-### KPI Reference Table, Segment Performance Summary & Timeline Filter
+![Dashboard](screenshots/Screenshot%202026-04-13%20180954.png)
 ![KPI Reference & Segment Summary](screenshots/Screenshot%202026-04-13%20181329.png)
-
-### KPI Summary Sheet — Revenue, Customer & Segment KPIs
 ![KPI Summary Sheet](screenshots/Screenshot%202026-04-13%20181205.png)
 
 ---
@@ -66,9 +61,9 @@ market-research-customer-segmentation-tool/
 ├── Market_Research_Customer_Segmentation_Tool_Enhanced 5.xlsx   # Main Excel workbook
 │
 ├── screenshots/
-│   ├── Screenshot 2026-04-13 180954.png   # Interactive Dashboard
-│   ├── Screenshot 2026-04-13 181329.png   # KPI Reference Table & Segment Performance Summary
-│   └── Screenshot 2026-04-13 181205.png   # KPI Summary Sheet
+│   ├── Screenshot 2026-04-13 180954.png
+│   ├── Screenshot 2026-04-13 181329.png
+│   └── Screenshot 2026-04-13 181205.png
 │
 ├── LICENSE
 └── README.md

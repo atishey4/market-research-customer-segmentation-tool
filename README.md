@@ -12,20 +12,20 @@
 
 | File | Description | Link |
 |------|-------------|------|
-| 📊 Excel Workbook | Full segmentation tool with all sheets & dashboard | [Download Excel](https://github.com/atishey4/market-research-customer-segmentation-tool/raw/main/Market_Research_Customer_Segmentation_Tool_Enhanced-5.xlsx) |
+| 📊 Excel Workbook | Full segmentation tool with all sheets & dashboard | [Download Excel](https://github.com/atishey4/market-research-customer-segmentation-tool/raw/main/Market_Research_Customer_Segmentation_Tool_Enhanced%205.xlsx) |
 
 ---
 
 ## 📸 Screenshots
 
 ### Interactive Dashboard — KPI Cards, Charts & Slicers
-![Interactive Dashboard](screenshots/Screenshot-2026-04-13-180954.jpg)
+![Interactive Dashboard](screenshots/Screenshot%202026-04-13%20180954.png)
 
 ### KPI Reference Table, Segment Performance Summary & Timeline Filter
-![KPI Reference & Segment Summary](screenshots/Screenshot-2026-04-13-181329.jpg)
+![KPI Reference & Segment Summary](screenshots/Screenshot%202026-04-13%20181329.png)
 
 ### KPI Summary Sheet — Revenue, Customer & Segment KPIs
-![KPI Summary Sheet](screenshots/Screenshot-2026-04-13-181205.jpg)
+![KPI Summary Sheet](screenshots/Screenshot%202026-04-13%20181205.png)
 
 ---
 
@@ -63,12 +63,12 @@ Customer segmentation is a cornerstone of modern marketing. Companies like **Ama
 ```
 market-research-customer-segmentation-tool/
 │
-├── Market_Research_Customer_Segmentation_Tool_Enhanced-5.xlsx   # Main Excel workbook
+├── Market_Research_Customer_Segmentation_Tool_Enhanced 5.xlsx   # Main Excel workbook
 │
 ├── screenshots/
-│   ├── Screenshot-2026-04-13-180954.jpg   # Interactive Dashboard
-│   ├── Screenshot-2026-04-13-181329.jpg   # KPI Reference Table & Segment Performance Summary
-│   └── Screenshot-2026-04-13-181205.jpg   # KPI Summary Sheet
+│   ├── Screenshot 2026-04-13 180954.png   # Interactive Dashboard
+│   ├── Screenshot 2026-04-13 181329.png   # KPI Reference Table & Segment Performance Summary
+│   └── Screenshot 2026-04-13 181205.png   # KPI Summary Sheet
 │
 ├── LICENSE
 └── README.md
@@ -162,7 +162,7 @@ The dataset covers **FY 2025–26 (Apr 2025 – Mar 2026)** with **200 customers
 - ✅ **Average Order Value (AOV)** — ₹9,616
 - ✅ **Total Transactions** — 1,044
 - ✅ **Repeat Customer %** — 57.5% (115 returning customers)
-- ✅ **Active Customers** — 78 (last purchase within period)
+- ✅ **Active Customers** — 78
 - ✅ **Loyal Customers** — 17 (8.5% of base)
 - ✅ **High Value Customers** — 74 (37.0% of base)
 - ✅ **At-Risk Customers** — 38

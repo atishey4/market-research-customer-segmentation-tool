@@ -18,14 +18,14 @@
 
 ## 📸 Screenshots
 
-### Dashboard Overview
-![Dashboard Overview](screenshots/dashboard_overview.png)
+### Interactive Dashboard — KPI Cards, Charts & Slicers
+![Interactive Dashboard](screenshots/Screenshot-2026-04-13-180954.jpg)
 
-### Customer Segmentation & KPI Cards
-![Segmentation KPIs](screenshots/segmentation_kpis.png)
+### KPI Reference Table, Segment Performance Summary & Timeline Filter
+![KPI Reference & Segment Summary](screenshots/Screenshot-2026-04-13-181329.jpg)
 
-### RFM Analysis & Segment Distribution
-![RFM Analysis](screenshots/rfm_analysis.png)
+### KPI Summary Sheet — Revenue, Customer & Segment KPIs
+![KPI Summary Sheet](screenshots/Screenshot-2026-04-13-181205.jpg)
 
 ---
 
@@ -66,9 +66,9 @@ market-research-customer-segmentation-tool/
 ├── Market_Research_Customer_Segmentation_Tool_Enhanced-5.xlsx   # Main Excel workbook
 │
 ├── screenshots/
-│   ├── dashboard_overview.png
-│   ├── segmentation_kpis.png
-│   └── rfm_analysis.png
+│   ├── Screenshot-2026-04-13-180954.jpg   # Interactive Dashboard
+│   ├── Screenshot-2026-04-13-181329.jpg   # KPI Reference Table & Segment Performance Summary
+│   └── Screenshot-2026-04-13-181205.jpg   # KPI Summary Sheet
 │
 ├── LICENSE
 └── README.md
@@ -78,7 +78,7 @@ market-research-customer-segmentation-tool/
 
 ## 📊 Dataset Description
 
-The dataset contains realistic customer records across demographics, transactions, and survey responses.
+The dataset covers **FY 2025–26 (Apr 2025 – Mar 2026)** with **200 customers** across **1,044 transactions**, spanning **7 product categories** and **23 cities/regions**.
 
 ### Customers Table (`tblCustomers`)
 | Column | Description |
@@ -87,7 +87,7 @@ The dataset contains realistic customer records across demographics, transaction
 | Name | Customer full name |
 | Gender | Male / Female |
 | Age | Customer age |
-| Region | North / South / East / West / Central |
+| City / Region | Geographic location (23 cities) |
 | Income Range | Annual income bracket |
 | Join Date | Customer acquisition date |
 
@@ -97,8 +97,8 @@ The dataset contains realistic customer records across demographics, transaction
 | Transaction ID | Unique transaction reference |
 | Customer ID | Linked customer |
 | Date | Purchase date |
-| Product Category | Electronics / FMCG / Apparel / Furniture / Software |
-| Amount | Transaction value |
+| Product Category | 7 categories including Electronics, FMCG, Apparel, Furniture, Software |
+| Amount | Transaction value (INR) |
 
 ### Survey Table (`tblSurvey`)
 | Column | Description |
@@ -157,58 +157,43 @@ The dataset contains realistic customer records across demographics, transaction
 
 ## 📈 Key KPIs Tracked
 
-- ✅ **Total Customers** — Total unique customer count
-- ✅ **Active Customers** — Customers with purchases in last 90 days
-- ✅ **Average Order Value (AOV)** — Mean transaction value
-- ✅ **Total Revenue** — Aggregate spend across all customers
-- ✅ **Loyal Customers %** — Share of RFM 555 customers
-- ✅ **At-Risk Customers %** — High recency + low frequency customers
-- ✅ **Repeat Customer %** — Returning vs new customer ratio
-- ✅ **Segment-wise Revenue** — Revenue breakdown by Loyal / At-Risk / Bargain Seeker / General
-- ✅ **Avg Satisfaction Index** — Composite score from survey data
-- ✅ **Channel Preference Split** — Online vs Offline distribution
+- ✅ **Total Customers** — 200 across 23 cities/regions
+- ✅ **Total Revenue (INR)** — ₹1,00,38,773
+- ✅ **Average Order Value (AOV)** — ₹9,616
+- ✅ **Total Transactions** — 1,044
+- ✅ **Repeat Customer %** — 57.5% (115 returning customers)
+- ✅ **Active Customers** — 78 (last purchase within period)
+- ✅ **Loyal Customers** — 17 (8.5% of base)
+- ✅ **High Value Customers** — 74 (37.0% of base)
+- ✅ **At-Risk Customers** — 38
+- ✅ **Avg Satisfaction Score** — 3.19
+- ✅ **Online Revenue %** — 47.2% | **Offline Revenue %** — 52.8%
+- ✅ **Avg Purchase Frequency** — 5.22 transactions per customer
 
 ---
 
 ## 📊 Dashboard Features
 
-### Layout
-```
-┌────────────────────────────────────────────────────────┐
-│  KPI Cards: Customers | AOV | Revenue | Loyal% | At-Risk%  │
-├──────────────────────────┬─────────────────────────────┤
-│  Bar Chart               │  Line Chart                 │
-│  (Customers by AgeGroup) │  (Monthly Revenue Trend)    │
-├──────────────────────────┼─────────────────────────────┤
-│  Column Chart            │  Pie / Donut Chart          │
-│  (Revenue by Segment)    │  (Segment Distribution)     │
-├──────────────────────────┴─────────────────────────────┤
-│  Satisfaction Heatmap: Region × Channel                  │
-├────────────────────────────────────────────────────────┤
-│  Slicers: Segment | Region | AgeGroup | Channel          │
-└────────────────────────────────────────────────────────┘
-```
-
 ### Visuals Included
-- 📊 **Bar Chart** — Customers by Age Group and Income Bracket
-- 📉 **Line Chart** — Monthly Revenue Trend by Segment
-- 📊 **Column Chart** — Revenue by Customer Segment
-- 🍩 **Pie / Donut Chart** — Segment Distribution (Loyal / At-Risk / Bargain Seeker / General)
-- 🌡️ **Heatmap Table** — Satisfaction Index by Region × Channel
-- 🎛️ **Slicers** — Segment, Region, AgeGroup, Channel
-- 📅 **Timeline Filter** — Dynamic date-range filtering
-- 🚨 **Conditional Formatting** — High-value customer highlights
+- 📊 **Horizontal Bar Chart** — Customers by Segment (Loyal / High Value / General / Bargain Seeker / At Risk)
+- 📊 **Column Chart** — Revenue by Segment (INR)
+- 🍩 **Donut Chart** — Customer Distribution by Age Group (<25 / 25-39 / 40-54 / 55+)
+- 📉 **Line Chart** — Monthly Total Revenue Trend (Apr 2025 – Mar 2026)
+- 📋 **Segment Performance Summary Table** — Customers, Revenue, Revenue%, Avg Spend, Status (Retain / Upsell / Re-engage / Nurture / Grow)
+- 📊 **KPI Reference Table** — Live-updating KPI summary grid
+- 🎛️ **Slicers** — Purchase Channel, Customer Segment, City/Region
+- 📅 **Timeline Filter** — Dynamic month-range filtering (Jan 2025 – May 2026)
 
 ---
 
 ## 💡 Business Insights Derived
 
-1. **Loyal Segment** — Highest AOV and repeat rate; focus retention campaigns and exclusive offers
-2. **At-Risk Customers** — High recency gap signals churn risk; trigger win-back email campaigns
-3. **Bargain Seekers** — Frequent but low-spend; ideal for discount-driven promotions
-4. **Regional Performance** — Pivot heatmap reveals which regions have highest satisfaction and spend
-5. **Channel Preference** — Online channel dominates in younger age groups; offline preferred by 55+
-6. **Segmentation ROI** — Targeted marketing to Loyal + High-Value segments can improve campaign ROI by 30–50%
+1. **High Value dominates revenue** — 74 High Value customers generate 65.8% of total revenue (₹66,07,484)
+2. **Loyal customers have highest AOV** — 17 Loyal customers average ₹89,758 spend each
+3. **At-Risk pool needs attention** — 38 customers at risk contribute only 5.4% revenue; win-back campaigns recommended
+4. **Offline slightly ahead** — 52.8% revenue offline vs 47.2% online; opportunity to grow digital channel
+5. **Revenue peak in Jan 2026** — Monthly trend shows a spike in Jan 2026, likely driven by festive/seasonal demand
+6. **Bargain Seekers are few but active** — Only 8 customers, avg spend ₹23,041 — nurture with targeted offers
 
 ---
 
@@ -218,7 +203,7 @@ The dataset contains realistic customer records across demographics, transaction
 > Built an Advanced Excel Market Research & Customer Segmentation Tool using RFM Analysis, demographic segmentation, and an interactive KPI dashboard to guide data-driven marketing strategy.
 
 **ATS-Friendly Version:**
-> Designed a Market Research & Customer Segmentation Tool in Microsoft Excel using RFM scoring (Recency, Frequency, Monetary), demographic grouping, and survey satisfaction analysis. Applied IFS-based segmentation logic to classify customers into Loyal, At-Risk, Bargain Seeker, and General groups. Built an interactive dashboard with PivotTables, slicers, and KPI cards enabling actionable insights for targeted marketing campaigns.
+> Designed a Market Research & Customer Segmentation Tool in Microsoft Excel using RFM scoring (Recency, Frequency, Monetary), demographic grouping, and survey satisfaction analysis. Applied IFS-based segmentation logic to classify 200 customers into Loyal, High Value, At-Risk, Bargain Seeker, and General groups across 1,044 transactions (₹1 Cr+ revenue). Built an interactive dashboard with PivotTables, slicers, timeline filter, and KPI cards enabling actionable insights for targeted marketing campaigns.
 
 ---
 
